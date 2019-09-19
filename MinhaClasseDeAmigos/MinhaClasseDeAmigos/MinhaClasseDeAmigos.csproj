@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BED76449-8F1A-4EBA-91A0-7F9ABDFB6CB9}</ProjectGuid>
+    <ProjectGuid>{7A530CAA-BAD7-41E6-BC09-D8860086EB4B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MinhaSegundaClasse</RootNamespace>
-    <AssemblyName>MinhaSegundaClasse</AssemblyName>
+    <RootNamespace>MinhaClasseDeAmigos</RootNamespace>
+    <AssemblyName>MinhaClasseDeAmigos</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\CestaDeFrutas.cs" />
+    <Compile Include="Class\Amigos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

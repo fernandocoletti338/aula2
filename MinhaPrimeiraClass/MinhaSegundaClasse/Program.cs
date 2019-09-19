@@ -11,21 +11,21 @@ namespace MinhaSegundaClasse
     {
         static void Main(string[] args)
         {
-            var minhaCestaDeFrutas = new List<Frutas>();
+            var minhaCestaDeFrutas = new List<CestaDeFrutas>();
 
-            minhaCestaDeFrutas.Add(new Frutas()
+            minhaCestaDeFrutas.Add(new CestaDeFrutas()
             {
                 Nome = "Banana",
                 Quantidade = 5
 
             });
 
-            minhaCestaDeFrutas.Add(new Frutas()
+            minhaCestaDeFrutas.Add(new CestaDeFrutas()
             {
                 Nome = "Laranja",
                 Quantidade = 2
             });
-            minhaCestaDeFrutas.ForEach(i => Console.WriteLine(($"Nome{i.Nome} Quant {i.Quantidade}"));
+            minhaCestaDeFrutas.ForEach(i => Console.WriteLine(($"Nome {i.Nome} Quant {i.Quantidade}")));
 
             Console.ReadKey();
 
