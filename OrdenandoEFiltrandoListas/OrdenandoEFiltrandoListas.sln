@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CestaDeFrutas", "CestaDeFrutas\CestaDeFrutas.csproj", "{1EB30BA9-8D37-4061-AE78-23387F662F4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PessoaCarteira", "PessoaCarteira\PessoaCarteira.csproj", "{1BB76B63-219E-4E25-A4DE-E415E95821B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EB30BA9-8D37-4061-AE78-23387F662F4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB30BA9-8D37-4061-AE78-23387F662F4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB30BA9-8D37-4061-AE78-23387F662F4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB30BA9-8D37-4061-AE78-23387F662F4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB76B63-219E-4E25-A4DE-E415E95821B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB76B63-219E-4E25-A4DE-E415E95821B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB76B63-219E-4E25-A4DE-E415E95821B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB76B63-219E-4E25-A4DE-E415E95821B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0845C68-E5A9-48B1-A0E6-685A783F3532}
+	EndGlobalSection
+EndGlobal
