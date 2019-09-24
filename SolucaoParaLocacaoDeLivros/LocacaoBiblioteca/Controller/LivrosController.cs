@@ -38,5 +38,9 @@ namespace LocacaoBiblioteca.Controller
         {
             return ListaDeLivros;
         }
+        public void RemoverLivrosPorID(int identificandoIDLivro)
+        {
+            ListaDeLivros.FirstOrDefault(x => x.Id == identificandoIDLivro).Ativo = false;
+        }
     }
 }

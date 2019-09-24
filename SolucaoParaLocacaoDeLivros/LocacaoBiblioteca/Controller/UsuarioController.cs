@@ -61,7 +61,7 @@ namespace LocacaoBiblioteca.Controller
             return ListaDeUsuarios.Where(x => x.Ativo).ToList<Usuario>();
         }
         /// <summary>
-        /// metodo que desativa um registro de usuario cadastrado em noss lista
+        /// metodo que desativa um registro de usuario cadastrado em nossa lista
         /// </summary>
         /// <param name="identificadoID">parametro que identifica o usuario que será desativado</param>
         public void RemoverUsuarioPorID(int identificadoID)

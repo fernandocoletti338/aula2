@@ -47,6 +47,7 @@ namespace InterfaceBiblioteca
                 Console.WriteLine("4 - Trocar Usuario");
                 Console.WriteLine("5 - Cadastrar Usuarios");
                 Console.WriteLine("6 - Remover Usuario");
+                Console.WriteLine("7 - Remover Livro");
                 Console.WriteLine("0 - Sair");
 
                 //aqui vamos pegar o numero digitado 

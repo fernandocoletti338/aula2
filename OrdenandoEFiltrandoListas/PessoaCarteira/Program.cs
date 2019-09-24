@@ -11,7 +11,7 @@ namespace PessoaCarteira
         static void Main(string[] args)
         {
             var listaPessoas = new List<Pessoa>();
-            #region
+            #region Lista de pesssoas
             listaPessoas.Add(new Pessoa()
             {
                Id= 0,
@@ -153,11 +153,11 @@ namespace PessoaCarteira
             });
             #endregion
 
-            listaPessoas.OrderBy(x => x.Nome).ToList<Pessoa>().ForEach(i => Console.WriteLine($"Id {i.Id} Nome {i.Nome}"));
+            listaPessoas.OrderBy(i => i.Nome).ToList<Pessoa>().ForEach(i => Console.WriteLine($"Id {i.Id} Nome {i.Nome}"));
 
             Console.WriteLine("--------------------------------");
 
-            listaPessoas.OrderByDescending(x => x.DataDeNascimento).ToList<Pessoa>().ForEach(i => Console.WriteLine($"Id {i.Id} Nome: {i.Nome}"));
+            listaPessoas.OrderByDescending(i => i.DataDeNascimento).ToList<Pessoa>().ForEach(i => Console.WriteLine($"Id {i.Id} Nome: {i.Nome}"));
 
             Console.WriteLine("--------------------------------");
 
