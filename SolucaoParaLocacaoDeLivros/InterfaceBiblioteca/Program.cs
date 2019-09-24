@@ -76,11 +76,29 @@ namespace InterfaceBiblioteca
                     case 6:
                         RemoverUsuarioPeloID();
                         break;
+                    case 7:
+                        RemoverLivroPeloID();
+                        break;
                     default:
                         break;
                 }
             }
             //MostraMenuSistema();
+        }
+        private static void RemoverLivroPeloID()
+        {
+            Console.WriteLine("Remover o livro pelo ID no sistema");
+
+            MostrarLivro();
+
+            Console.WriteLine("Informe o ID do livro a ser removido do sistema");
+
+            var livroID = int.Parse(Console.ReadLine());
+
+            livrosController.RemoverLivrosPorID(livroID);
+
+            Console.WriteLine("Livro removido com sucesso");
+            Console.ReadKey();
         }
         private static void RemoverUsuarioPeloID()
         {
