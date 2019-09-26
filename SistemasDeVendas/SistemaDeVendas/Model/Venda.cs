@@ -7,7 +7,16 @@ using System.Threading.Tasks;
 
 namespace SistemaDeVendas.Model
 {
-    class Venda
+    public class Venda
     {
+        public int Id { get; set; }
+
+        public string Carro { get; set; }
+
+        public double Valor { get; set; }
+
+        public int Quantidade { get; set; }
+
+        public DateTime Data { get; set; }
     }
 }
