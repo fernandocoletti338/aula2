@@ -13,6 +13,10 @@ namespace ListagemDeCervejas.Controller
     public class CervejaController
     {
         SistemaCervejaContext sistemaCervejaContext = new SistemaCervejaContext();
+        /// <summary>
+        /// metodo que retorna nossa lista completa de cervejas
+        /// </summary>
+        /// <returns></returns>
 
         public List<Cerveja> GetCarros()
         {
@@ -21,12 +25,13 @@ namespace ListagemDeCervejas.Controller
 
         public void AddCerveja(Cerveja cerveja)
         {
+            cerveja.Id = sistemaCervejaContext.IdContador++;
             sistemaCervejaContext.ListaDeCerveja.Add(cerveja);
         }
 
         public double RetornaSomaValor()
         {
-           return sistemaCervejaContext.ListaDeCerveja.Sum(i => i.Valor);
+            return sistemaCervejaContext.ListaDeCerveja.Sum(i => i.Valor);
         }
 
         public double RetornaSomaLitros()

@@ -8,13 +8,14 @@ namespace ListagemDeCervejas.Model
 {
         public class SistemaCervejaContext
     {
+        public int IdContador { get; set; } = 1;
         public List<Cerveja> ListaDeCerveja { get; set; }
 
         public SistemaCervejaContext()
         {
             ListaDeCerveja = new List<Cerveja>();
 
-            ListaDeCerveja.Add(new Cerveja() { Id = 1, Nome = "Budweiser    ", Litros = 0.330, Alcool = 5,   Valor = 4.19 });
+            ListaDeCerveja.Add(new Cerveja() {Id = 1, Nome = "Budweiser    ", Litros = 0.330, Alcool = 5,   Valor = 4.19 });
             ListaDeCerveja.Add(new Cerveja() {Id = 2,  Nome = "Stella Artois", Litros = 0.275, Alcool = 5,   Valor = 2.99 });
             ListaDeCerveja.Add(new Cerveja() {Id = 3,  Nome = "Colorado     ", Litros = 0.600, Alcool = 7,   Valor = 6.93 });
             ListaDeCerveja.Add(new Cerveja() {Id = 4,  Nome = "Original     ", Litros = 0.600, Alcool = 4.9, Valor = 5.49 });
