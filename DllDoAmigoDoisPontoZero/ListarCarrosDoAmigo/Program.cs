@@ -14,6 +14,7 @@ namespace ListarCarrosDoAmigo
         {
             controller.ListagemCarros().ForEach(i => Console.WriteLine($"{i.Id} {i.Marca} {i.Modelo}"));
 
+
                 Console.ReadLine();
         }
     }
