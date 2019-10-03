@@ -11,7 +11,7 @@ namespace ListagemDeCervejas.Model
         public int Id { get; set; }
         public string Nome { get; set; }
         public double Litros { get; set; }
-        public Double Alcool { get; set; }
+        public double Alcool { get; set; }
         public double Valor { get; set; }
     }
 }
