@@ -1,0 +1,1 @@
+﻿select * from	Carros where Marca = 'Chevrolet'
