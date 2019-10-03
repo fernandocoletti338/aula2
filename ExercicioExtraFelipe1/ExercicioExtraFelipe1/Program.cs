@@ -12,9 +12,10 @@ namespace ExercicioExtraFelipe1
         {
             var nomes = new List<string> { "Fernando", "Sheila", "Gabriel", "Cleiton", "Giomar", "Cleidson",
                 "Erineldson", "Jocieldson", "Pedro", "Cleonison"};
-            foreach (var nome in nomes) ;
 
-            Console.WriteLine(nomes);
+            nomes.Sort();//ordem alfabetica
+
+            nomes.ForEach(i => Console.WriteLine(i));//imprime nomes um a um
 
             Console.ReadKey();
 
