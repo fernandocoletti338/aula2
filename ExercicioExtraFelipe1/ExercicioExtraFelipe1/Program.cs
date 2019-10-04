@@ -17,8 +17,13 @@ namespace ExercicioExtraFelipe1
 
             nomes.ForEach(i => Console.WriteLine(i));//imprime nomes um a um
 
+            Console.WriteLine("Insira um nome");
+
+            var nomeInserir = Console.ReadLine();
+
             Console.ReadKey();
 
         }
     }
 }
+
