@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevisandoEntity", "RevisandoEntity\RevisandoEntity.csproj", "{3C5FAE21-C472-460F-98FF-A09261416110}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplicacaoVisual", "AplicacaoVisual\AplicacaoVisual.csproj", "{A15C9467-65DC-4412-B85B-85748CF95CFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C5FAE21-C472-460F-98FF-A09261416110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C5FAE21-C472-460F-98FF-A09261416110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C5FAE21-C472-460F-98FF-A09261416110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C5FAE21-C472-460F-98FF-A09261416110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15C9467-65DC-4412-B85B-85748CF95CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15C9467-65DC-4412-B85B-85748CF95CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15C9467-65DC-4412-B85B-85748CF95CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15C9467-65DC-4412-B85B-85748CF95CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1356B02E-DBB0-4F2E-A42B-B6D42B19BF5F}
+	EndGlobalSection
+EndGlobal
