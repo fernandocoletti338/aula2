@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalagoFlores", "CatalagoFlores\CatalagoFlores.csproj", "{4A5CB884-C821-4D67-A9D6-1A25CAE978BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelaVisual", "TelaVisual\TelaVisual.csproj", "{F604E4AC-DA28-4511-B99B-B7CC1E87261D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A5CB884-C821-4D67-A9D6-1A25CAE978BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A5CB884-C821-4D67-A9D6-1A25CAE978BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A5CB884-C821-4D67-A9D6-1A25CAE978BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A5CB884-C821-4D67-A9D6-1A25CAE978BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F604E4AC-DA28-4511-B99B-B7CC1E87261D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F604E4AC-DA28-4511-B99B-B7CC1E87261D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F604E4AC-DA28-4511-B99B-B7CC1E87261D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F604E4AC-DA28-4511-B99B-B7CC1E87261D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {961B963C-56C3-492D-A707-F9AD6B13D735}
+	EndGlobalSection
+EndGlobal
