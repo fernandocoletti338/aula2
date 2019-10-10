@@ -12,12 +12,15 @@ namespace CatalagoCelulares.Model
     {
         [Key]//cahve primaria 
         public int Id { get; set; }
+
         [MaxLength(30)]
         [Required]
         public string Marca { get; set; }
+
         [MaxLength(30)]
         [Required]
         public string Modelo { get; set; }
+
         [Required]
         public double Preco { get; set; }
     }

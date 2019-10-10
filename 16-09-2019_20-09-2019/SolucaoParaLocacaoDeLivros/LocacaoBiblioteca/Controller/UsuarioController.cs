@@ -27,10 +27,9 @@ namespace LocacaoBiblioteca.Controller
         /// </summary>
         /// <param name="parametroUsuario">novo usuario que sera adicionado na lista</param>
         public void AdiconaUsuarios(Usuario parametroUsuario)
-        {
-            parametroUsuario.Id = contextDB.IdContadorUsuarios++;
-            //adiciono o meu usarui a minha lista
+        {            
             contextDB.ListaDeUsuarios.Add(parametroUsuario);
+            contextDB.SaveChanges();
         }
         public List<Usuario> RetornaListaDeUsuarios()
         {
@@ -43,13 +42,14 @@ namespace LocacaoBiblioteca.Controller
         /// <param name="identificadoID">parametro que identifica o usuario que será desativado</param>
         public void RemoverUsuarioPorID(int identificadoID)
         {
-            //aqui usamo o metodo FirstOrDefault para localizar nosso usuario dentro da lista
+            //aqui usamos o metodo FirstOrDefault para localizar nosso usuario dentro da lista
             //com isso conseguimos acessar as propredades dele e dasativar o registro
             var idExiste = contextDB.ListaDeUsuarios.FirstOrDefault(x => x.Id == identificadoID);
 
             if (idExiste != null)
             {
                 idExiste.Ativo = false;
+                contextDB.SaveChanges();
             }
         }
     }

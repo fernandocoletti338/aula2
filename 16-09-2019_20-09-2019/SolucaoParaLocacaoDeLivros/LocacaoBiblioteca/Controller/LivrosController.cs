@@ -9,28 +9,42 @@ namespace LocacaoBiblioteca.Controller
 {
     public class LivrosController
     {
-        private LocacaoContext contextDB = new LocacaoContext();   
+        private LocacaoContext contextDB = new LocacaoContext();
         /// <summary>
         /// metodo que adiciona livro em nossa lidta ja" instanciada" criada dentro do construtot
         /// </summary>
         /// <param name="parametroLivro">informa~ções do livro que vamos adicionar</param>
         public void AdicionarLivro(Livro parametroLivro)
         {
-            parametroLivro.Id = contextDB.IdContadorLivro++;
-            contextDB.ListaDeLivros.Add(parametroLivro);
+
+            contextDB.ListaDeLivros.Add(parametroLivro);//adicionamos o livro em nossa lista
+            contextDB.SaveChanges();//salvamos no banco de dados
         }
-        public List<Livro> RetornaListaDeLivros()
+        public IQueryable<Livro> RetornaListaDeLivros()
         {
-            return contextDB.ListaDeLivros.FindAll(i => i.Ativo == true);
+            return contextDB.ListaDeLivros.Where(i => i.Ativo == true);
         }
         public void RemoverLivrosPorID(int identificandoIDLivro)
         {
-           var idExiste = contextDB.ListaDeLivros.FirstOrDefault(x => x.Id == identificandoIDLivro);
+            var idExiste = contextDB.ListaDeLivros.FirstOrDefault(x => x.Id == identificandoIDLivro);
 
             if (idExiste != null)
             {
                 idExiste.Ativo = false;
+                contextDB.SaveChanges();
             }
+        }
+        public bool AtualizarLivro(Livro item)
+        {
+            var findLivro = contextDB.ListaDeLivros.FirstOrDefault(x => x.Id == item.Id);
+
+            if (findLivro != null)
+            {
+                findLivro.DataAlteracao = DateTime.Now;
+                contextDB.SaveChanges();
+                return true;
+            }
+            return false;
         }
 
     }

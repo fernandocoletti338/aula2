@@ -19,8 +19,8 @@ namespace InterfaceBiblioteca
         {
             Console.WriteLine("Sistema de locação de livro 1.0");
 
-            while (!RealizaLoginSistema())
-                Console.WriteLine("Login e Senha inválidos");
+           //while (!RealizaLoginSistema())
+             //  Console.WriteLine("Login e Senha inválidos");
 
             MostraMenuSistema();
 
@@ -31,12 +31,12 @@ namespace InterfaceBiblioteca
         /// </summary>
         private static void MostraMenuSistema()
         {
-            //iniciamos nossa variavel com o menor vaolor int possivel
+            //iniciamos nossa variavel com o menor valor int possivel
             var menuEscolhido = int.MinValue;
+            
             //aqui definimos se for diferente de 0 mantemos o sistema aberto se não finalizamos
             while (menuEscolhido != 0)
             {
-
                 Console.Clear();
                 Console.WriteLine("Informe seu Login e Senha para acessar o sitema:");
 
@@ -48,6 +48,7 @@ namespace InterfaceBiblioteca
                 Console.WriteLine("5 - Cadastrar Usuarios");
                 Console.WriteLine("6 - Remover Usuario");
                 Console.WriteLine("7 - Remover Livro");
+                Console.WriteLine("8 - Atualizar Livro");
                 Console.WriteLine("0 - Sair");
 
                 //aqui vamos pegar o numero digitado 
@@ -79,11 +80,41 @@ namespace InterfaceBiblioteca
                     case 7:
                         RemoverLivroPeloID();
                         break;
+                    case 8:
+                        AtualizaLivro();
+                        break;
                     default:
                         break;
                 }
             }
             //MostraMenuSistema();
+        }
+        private static void AtualizaLivro()
+        {
+            Console.WriteLine("atualiza um livro pelo Id"  );
+
+            MostrarLivro();
+
+            Console.WriteLine("Informe o ID do livropara alterar no sistema");
+            var livroID = int.Parse(Console.ReadLine());
+
+            var livro = livrosController.RetornaListaDeLivros().FirstOrDefault(x => x.Id == livroID);
+
+            if (livro != null)
+            {
+                Console.WriteLine("informe um novo nome para o livro");
+                var novoNome = Console.ReadLine();
+
+                livro.Nome = novoNome;
+
+                var resultado = livrosController.RetornaListaDeLivros().FirstOrDefault(x => x.Id == livroID);
+
+                if (resultado != null)
+                    Console.WriteLine("Livro desativado com sucesso");
+                    else
+                    Console.WriteLine("Erro ao remover livro");
+            }
+
         }
         private static void RemoverLivroPeloID()
         {
@@ -167,7 +198,7 @@ namespace InterfaceBiblioteca
 
         private static void MostrarLivro()
         {
-            livrosController.RetornaListaDeLivros().ForEach(i => Console.WriteLine($"Id:{i.Id} Nome do livro:{i.Nome}"));
+            livrosController.RetornaListaDeLivros().ToList<Livro>().ForEach(i => Console.WriteLine($"Id:{i.Id} Nome do livro:{i.Nome}"));
 
             Console.ReadKey();
         }
