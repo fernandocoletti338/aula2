@@ -16,6 +16,7 @@ namespace CatalagoCelulares.Controller
         /// </summary>
         /// <returns>querylist de celulares filtrado por ativo</returns>
         public IQueryable<Celular> GetCelulars()
+
         {
             return contexDB.Celulares.Where(x => x.Ativo == true);
         }

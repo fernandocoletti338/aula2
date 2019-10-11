@@ -74,7 +74,7 @@ namespace CellDu
             });
             //verificamos se o valor é verdaderi ou falso
             if (resultado)// caso verdade sucesso
-                Console.WriteLine("Celular cadstrado com sucesso");
+                Console.WriteLine("Celular cadastrado com sucesso");
             else// caso falso apresenta o aviso
                 Console.WriteLine("Erro ao cadastrar celular");
         }
