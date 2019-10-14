@@ -18,10 +18,12 @@ namespace CadastroDeBicicleta.Controller
         }
 
         //Metodo inseri novas bicicletas em nosso banco de dados
-        public void InserirBicicleta (Bicicleta item)
+        public bool InserirBicicleta (Bicicleta item)
         {
             contexDB.Bicicletas.Add(item);
             contexDB.SaveChanges();
+
+            return true;
         }
 
         //Metodo remove as bicicletas no banco de dados

@@ -65,7 +65,8 @@ namespace CellDu
             var preco = double.Parse(Console.ReadLine());
             //criamos o resultado para identificar ucesso ou erro
 
-            var resultado = celulares.InserirCelular(new Celular()//nossa controller pelo nome que damos a ela> (InserirCelular)um novo celular
+            var resultado = celulares.InserirCelular(new Celular()
+            //nossa controller pelo nome que damos a ela> (InserirCelular)um novo celular
             {
                 Marca = marca,
                 Modelo = modelo,
