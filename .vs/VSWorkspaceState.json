@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Floricultura",
-    "\\SistemaCelular"
+    "\\Web",
+    "\\Web\\primeiroHtml"
   ],
-  "SelectedNode": "\\Floricultura\\Floricultura.sln",
+  "SelectedNode": "\\Web",
   "PreviewInSolutionExplorer": false
 }

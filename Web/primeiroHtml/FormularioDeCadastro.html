@@ -5,20 +5,35 @@
     <meta charset="utf-8" />
     <title>Tabela de Cadastro</title>
     <style>
+        body {
+            background-image: url(http://www.scinovacaoemrede.com.br/wp-content/uploads/2017/07/HBSIS-SOLU%C3%87%C3%95ES-EM-TECNOLOGIA-DA-INFORMA%C3%87%C3%83O-LTDA.png);
+            background-repeat: repeat;
+            background-size: 12%;
+        }
+
         #conteudo {
             width: 300px;
-            height: 500px;
-            box-shadow: 3px 3px 8px 7px #b3acac;
+            height: 130px;
+            box-shadow: 1px 1px 3px 0px #b3acac;
+            margin-left: 40%;
+            margin-top: 20%;
+            background-color: ghostwhite;
         }
 
         input[type="text"] {
             margin-top: 2%;
+            margin-left: 3%;
+        }
+
+        #botao {
+            margin-top: 5%;
+            margin-left: 35%;
         }
     </style>
 </head>
 <body>
     <div id="conteudo">
-        <input type="text" style="width:89%"
+        <input type="text" style="width:92.5%"
                placeholder="Nome"
                name="Nome"
                id="Nome"
@@ -42,15 +57,17 @@
                id="Nome"
                value="" />
 
-        <input type="text" style="width:45%"
+        <input type="datetime-local" style="width:45%"
                placeholder="Data de Nacimento"
                name="Nome"
                id="Nome"
-               value="" />
-        <input type="button" style="width:90%"
-               name="bt"
-               id="bt"
-               value="Enviar" />
+               value="Data de nascimento" />
+        <div id="botao">
+            <input type="button" style="width:45%;background-color:black;color:white;"
+                   name="bt"
+                   id="bt"
+                   value="Enviar" />
+        </div>
     </div>
 
 </body>
