@@ -11,6 +11,11 @@ $(document).ready(
 
             var convercao = valorreal / valordolar;
 
+            var convercao = (valorreal / valordolar)
+                .toFixed(2)
+                .toString()
+                .toreplace(/(d)(\d{2})$/, "$1,$2");
+
             $('input[name="valordolar"]').val(convercao);
             
 
