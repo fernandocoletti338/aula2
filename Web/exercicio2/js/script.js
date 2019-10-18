@@ -1,33 +1,42 @@
-/*ao carregar nosso site por completo executa o conteudo do $(document).ready*/
+/* Ao carregar nosso site por completo executa o conteudo do $(document).ready()*/
 $(document).ready(
     function () {
-        //informamos que no botão do click ele ira chamar nosso alerta
+        //Informamos que no botão do click ele ira chamar nosso alerta
         $('input[name="btnconverter"]').click(function () {
+            var url = "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao=%2710-16-2019%27&$top=100&$format=json";
 
-            var valordolar = 4.16;
-            var valorreal = $('input[name="valorreal"]').val()
-                .replace(".", "")
-                .replace(",", ".");
+            $.getJSON(url, function (data) {
+    
+                var valordolar = data.value[0].cotacaoVenda;
+                /*  Obter um valor */
+                var valoreal = $('input[name="valorreal"]').val()
+                    .replace(".", "")
+                    .replace(".", "")
+                    .replace(",", ".");
 
-            var convercao = valorreal / valordolar;
 
-            var convercao = (valorreal / valordolar)
-                .toFixed(2)
-                .toString()
-                .toreplace(/(d)(\d{2})$/, "$1,$2");
+                var convercao = (valoreal / valordolar)
+                    .toLocaleString('en-US', { minimumFractionDigits: 2, currency: 'USD' });
 
-            $('input[name="valordolar"]').val(convercao);
-            
+                /* Inserir um valor*/
+                $('input[name="valordolar"]').val(convercao);
+            });
 
         });
-        //colocamos a mask em nosso campo 999.999,99
-        $('input[name="valorreal"]').mask("000.000,00");
-        
+
+        //Colocamos a mask em nosso campo 999.999,00
+        //$('input[name="valoreal"]').mask("000.000,00");
+        $('input[name="valoreal"]').maskMoney({
+            showSymbol: false,
+            symbol: "R$",
+            decimal: ",",
+            thousands: "."
+        });
     }
 );
 
 $(document).on('keypress', function (e) {
-    if (e.keyCode === 13) {
+    if (e.which === 13) {
         $('input[name="btnconverter"]').click();
     }
 });
