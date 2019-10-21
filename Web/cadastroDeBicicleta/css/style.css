@@ -1,5 +1,11 @@
 body {
     height: 100vh;
-    background-image: url('https://www.todomountainbike.net/images/articles/2019/puntos-engrase-bicicleta.jpg');
-    background-size: 22%;
+    background-image: url('https://st2.depositphotos.com/5371734/8510/v/950/depositphotos_85102254-stock-illustration-pattern-with-retro-bicycles.jpg');
+    background-size: 50%;
+}
+#mostrar{
+    left:15px;
+}
+#salvar{
+    right:15px;
 }
