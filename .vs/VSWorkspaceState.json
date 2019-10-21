@@ -2,14 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\Web",
-    "\\Web\\conversorMoedas\\css",
-    "\\Web\\exercicio1",
-    "\\Web\\exercicio1\\css",
+    "\\Web\\cadastro de animais",
+    "\\Web\\cadastro de animais\\css",
+    "\\Web\\cadastro de animais\\js",
     "\\Web\\exercicio1\\js",
-    "\\Web\\exercicio2",
     "\\Web\\exercicio2\\css",
-    "\\Web\\exercicio2\\js"
+    "\\Web\\exercicio2\\js",
+    "\\Web\\PrimeiroWebSite",
+    "\\Web\\PrimeiroWebSite\\js"
   ],
-  "SelectedNode": "\\Web\\exercicio2",
+  "SelectedNode": "\\Web\\PrimeiroWebSite\\js\\Scripts.js",
   "PreviewInSolutionExplorer": false
 }
