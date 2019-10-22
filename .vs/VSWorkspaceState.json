@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\Web",
-    "\\WebAPI",
-    "\\WebAPI\\css",
-    "\\WebAPI\\js",
-    "\\Web\\cadastro de animais",
+    "\\Web\\cadastro de animais\\css",
+    "\\Web\\cadastro de animais\\js",
+    "\\Web\\cadastroDeBicicleta",
     "\\Web\\cadastroDeBicicleta\\css",
-    "\\Web\\exercicio2\\css",
-    "\\Web\\exercicio2\\js",
-    "\\Web\\PrimeiroWebSite\\js"
+    "\\Web\\cadastroDeBicicleta\\js",
+    "\\Web\\exercicio1\\js",
+    "\\Web\\exercicio2",
+    "\\Web\\exercicio2\\css"
   ],
-  "SelectedNode": "\\Web\\cadastro de animais\\index.html",
+  "SelectedNode": "\\Web\\exercicio2\\index.html",
   "PreviewInSolutionExplorer": false
 }
