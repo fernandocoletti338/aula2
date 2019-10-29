@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WebApiImc",
+    "\\WebAPI\\js",
+    "\\WebApplication1\\WebApplication1"
   ],
-  "SelectedNode": "\\Web",
+  "SelectedNode": "\\WebApiImc\\WebApiImc.sln",
   "PreviewInSolutionExplorer": false
 }
