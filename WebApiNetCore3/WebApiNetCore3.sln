@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiNetCore3", "WebApiNetCore3\WebApiNetCore3.csproj", "{A0B61D13-7D0A-4605-9C8C-0FED1302AEB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0B61D13-7D0A-4605-9C8C-0FED1302AEB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B61D13-7D0A-4605-9C8C-0FED1302AEB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B61D13-7D0A-4605-9C8C-0FED1302AEB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B61D13-7D0A-4605-9C8C-0FED1302AEB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFE9815E-76E7-47F2-BFA1-B799CF1A64E2}
+	EndGlobalSection
+EndGlobal
